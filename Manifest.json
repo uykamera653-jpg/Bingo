@@ -1,14 +1,20 @@
 {
-  "name": "BINGO",
-  "short_name": "BINGO",
+  "name": "Bingo — Yo‘qoldi / Topildi",
+  "short_name": "Bingo",
+  "description": "Yo‘qolgan va topilgan narsalar bo‘yicha e’lon joylash uchun ilova",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#FFF7D6",
-  "theme_color": "#f59e0b",
+  "background_color": "#ffffff",
+  "theme_color": "#facc15",
   "icons": [
     {
       "src": "icon.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
