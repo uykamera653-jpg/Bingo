@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bingo App</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#F5E66B">
+  <link rel="icon" href="icon.png" type="image/png">
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin: 50px;
+      background: #fdfdfd;
+    }
+    h1 {
+      color: #222;
+    }
+    button {
+      background: #f5e66b;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Salom 👋 Bingo App!</h1>
+  <p>Bu sizning birinchi Progressive Web App (PWA) loyihangiz 🚀</p>
+  <button onclick="alert('Bingo bosildi!')">Bos!</button>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log("✅ Service Worker ro‘yxatdan o‘tdi"))
+          .catch(err => console.log("❌ SW xato:", err));
+      });
+    }
+  </script>
+</body>
+</html>
